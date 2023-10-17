@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 400px;
+    border: 5px solid purple;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #9c88ff, #fbc531);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.player-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 100%;
+    padding-top: 100%; /* makes it square */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #333;
+    border: none; /* remove cell border */
+    background-color: white; /* set cell background to white */
+    border-radius: 10px; /* rounded corners */
+    box-sizing: border-box; /* ensures padding and border are included in the total height/width */
+}
+
+
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.start-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.reset-button {
+    margin-top: 20px;
+    background-color: #FF5722; /* Deep Orange */
+    color: white;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

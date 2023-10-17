@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>TIC-TAC-TOE</h1>
+        <div class="player-inputs">
+            <input type="text" id="player1" placeholder="Player 1 alias">
+            <input type="text" id="player2" placeholder="Player 2 alias">
+            <button class="start-button" onclick="startGame()">Start Game</button>
+        </div>
+        <div class="board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <div id="turnDisplay"></div>
+        <div class="scoreboard">
+            <div id="player1-score">Player 1: 0</div>
+            <div id="player2-score">Player 2: 0</div>
+        </div>
+        <button class="reset-button" onclick="resetGame()">Reset Game</button>
+    </div>
+    <!-- Add GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
